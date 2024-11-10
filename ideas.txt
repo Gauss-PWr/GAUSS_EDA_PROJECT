@@ -1,0 +1,84 @@
+-- What already has been analysed
+
+Accident Frequency by Category
+* Accident severity
+* Age band of driver
+* Day of week
+* Educational level
+* Types of junctions
+* Number of vehicle involved
+
+Fatal injury ratio by Category
+* Types of junction
+* Number of vehicle involved
+* Light conditions
+* Weather conditions
+* Type of collision
+* Day of week
+* Type of vehicle
+
+
+
+-- What can be analysed
+
+Accident Frequency by Category (more ideas)
+* Hour - (distribution of accidents throughout the day)
+* Cause of accident
+
+Instead of looking only at the fatal injury ratio, we can
+analyse the distribution of all three types of injuries
+by columns mentioned above and additionally by:
+* Age band of driver
+* Educational level
+* Driving experience
+* Type of vehicle
+* Area of accident
+* Road surface type
+* Road surface conditions
+* Vehicle movement type
+* Cause of accident
+* Sex of driver - (Men are said to be more prone to reckless driving, it could be worth to fact-check that)
+
+Accident Frequency by Category and Type of junction
+* Driving experience - (Maybe drivers with different experience cause accidents on different types of junctions?)
+* Type of vehicle - (Bigger vehicles may struggle with certain types of junctions, which could increase accident rate)
+
+Accident Frequency by Category and Road surface
+* Driving experience - (Drivers with higher experience may pose less of a danger on wet or damp surfaces)
+* Type of vehicle - (Bigger vehicles may struggle on wet surfaces, which could increase accident rate)
+
+Accident Frequency by Category and Light conditions
+* Driving experience - (Drivers with higher experience may pose less of a danger at night)
+
+Accident Frequency by Category and Weather conditions
+* Driving experience - (Drivers with higher experience may pose less of a danger druing rainy wather)
+* Type of vehicle - (Bigger vehicles may struggle on wet surfaces, which could increase accident rate)
+
+Mean/Median Number of casualties by Category
+* Age band of driver
+* Driving experience
+* Type of vehicle
+* Area of accident
+* Type of junction
+* Road surface conditions
+* Light conditions
+* Weather conditions
+* Number of vehicles
+* Vehicle movement
+
+Accident Frequency by Category and Vehicle movement
+* Drivers experience - (Drivers with lower experience may pose more of a danger during moving backwards or making a U-turn)
+* Type of vehicle
+
+Accident Frequency by Category and Cause of accident
+* Age band of driver
+* Education level
+* Driving experience
+* Type of vehicle
+* Area of accident
+* Type of junction
+* Road surface conditions
+* Light conditions
+* Weather conditions
+* Number of casualties
+* Vehicle movement
