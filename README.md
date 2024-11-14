@@ -1,6 +1,15 @@
 # GAUSS_EDA_PROJECT
 
-Requirements:
-- A valid Kaggle API key stored in the file 'kaggle.json' in the directory: `~/.kaggle/` (for Unix-like systems) or `%USERPROFILE%\.kaggle\` (for Windows).
-- The dataset name should be specified in the .env file under the key 'DATASET'.
-- Files to be deleted should be passed as a list in the 'delete_files' argument or specified in the .env file under the key 'DELETE_FILES', separated by commas.
+## Installation
+
+### Step 1: Set Up Kaggle API Key
+1. Log in to [Kaggle](https://www.kaggle.com/), go to **Account** > **API**, and click **Create New API Token** to download `kaggle.json`.
+2. Place `kaggle.json` in:
+   - **Linux/macOS**: `~/.kaggle/`
+   - **Windows**: `%USERPROFILE%\.kaggle\`
+
+### Step 2: Configure `.env` File
+Create a `.env` file in the project root with:
+
+```plaintext
+DATASET="username/dataset-name"   # Replace with your dataset
