@@ -162,4 +162,4 @@ cython_debug/
 #.idea/
 
 # Ignoring data folder
-/data/
+data/*.csv
