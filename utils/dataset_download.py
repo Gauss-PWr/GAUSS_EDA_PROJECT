@@ -1,7 +1,7 @@
 import os
 from kaggle.api.kaggle_api_extended import KaggleApi
 from dotenv import load_dotenv
-from config import DATASET_PATH
+from utils.config import DATASET_PATH
 
 def download_kaggle_dataset():
     """
