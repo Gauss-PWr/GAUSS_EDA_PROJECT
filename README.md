@@ -12,4 +12,4 @@
 Create a `.env` file in the project root with:
 
 ```plaintext
-DATASET="username/dataset-name"   # Replace with your dataset
+DATASET_PATH="username/dataset-name"   # Replace with your dataset
