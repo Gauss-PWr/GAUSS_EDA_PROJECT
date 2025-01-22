@@ -1,7 +1,7 @@
 import pandas as pd
 import plotly.graph_objects as go
 
-def add_plot_to_fig(figure, p_tab, p_placement=(), p_annotation_placement=(1,1), p_shorten=0, p_cat=(),
+def add_plot_to_fig(figure, p_tab, record_count, p_placement=(), p_annotation_placement=(1,1), p_shorten=0, p_cat=(),
                     p_categoryorder='', p_order=[], p_tickvals=[], p_range_multiplier=1.25, p_rename=[]):
     
     # standardizing the columns names
@@ -50,6 +50,6 @@ def add_plot_to_fig(figure, p_tab, p_placement=(), p_annotation_placement=(1,1),
 
     # adding an annotation with the null count
     null_count = p_tab.isnull().sum() + p_tab[p_tab == 'na'].count() + p_tab[p_tab == 'unknown'].count() + p_tab[p_tab == 'Unknown'].count()
-    null_percent = round(null_count/p_tab.count()*100)
+    null_percent = round(null_count/record_count*100)
     figure.add_annotation(text=f' Null counts <br>{null_count} ({null_percent}%)', x=p_annotation_placement[0], y=p_annotation_placement[1],
                           xref='paper', yref='paper', showarrow=False, bgcolor='white', bordercolor=('black' if null_percent < 20 else 'red'), borderpad=2.4)

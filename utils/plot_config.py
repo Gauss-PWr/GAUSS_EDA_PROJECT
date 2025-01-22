@@ -106,14 +106,14 @@ def setup_summary_chart(dataframe):
     fig.update_yaxes(title='Probability of accident', showgrid=True, fixedrange=True, row=1, col=1)
 
     time_null_count = accidents_plot.Time.isnull().sum()
-    fig.add_annotation(text=f'Null counts<br>{time_null_count} ({round(time_null_count/accidents_plot.Time.count()*100)}%)', x=0.4217, y=1, xref='paper', yref='paper',
+    fig.add_annotation(text=f'Null counts<br>{time_null_count} ({round(time_null_count/len(accidents_plot)*100)}%)', x=0.4217, y=1, xref='paper', yref='paper',
                     showarrow=False, bgcolor='white', bordercolor='black', borderpad=2.4)
 
     for i in range(1, number_of_plots):
-        add_plot_to_fig(fig, accidents_plot.iloc[:, i], p_placement=SETUP_placements[i], p_annotation_placement=SETUP_annotation_placements[i],
+        add_plot_to_fig(fig, accidents_plot.iloc[:, i], len(accidents_plot), p_placement=SETUP_placements[i], p_annotation_placement=SETUP_annotation_placements[i],
                         p_shorten=SETUP_shorten[i], p_cat=SETUP_cat[i], p_categoryorder=SETUP_categoryorder[i], p_order=SETUP_order[i],
                         p_range_multiplier=SETUP_range_multiplier[i], p_rename=SETUP_rename[i], p_tickvals=SETUP_tickvals[i])
-
+    
 
     fig.add_annotation(x=0.06, y=0.994, xref='paper', yref='paper', text='Two spikes', showarrow=False, bgcolor='white', bordercolor='black', borderpad=2.4)
     fig.add_annotation(x=0.135, y=0.96, xref='paper', yref='paper', ax=-60, ay=-70, arrowhead=2)
