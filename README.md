@@ -1,4 +1,19 @@
-# GAUSS_EDA_PROJECT
+# Road Traffic Accidents Analysis  
+
+Developed as part of the "Gauss" Student Society by [Dominik Kukla](https://github.com/DominikKukla), [Wojciech Kowal](https://github.com/WojtekKowal), and [Mariia Kopylova](https://github.com/marika731).<br>
+This project analyzes the **"Road Traffic Accidents"** dataset from Kaggle using **Python**, **Pandas**, and **Plotly**.
+
+## Dataset Overview  
+- Collected from Addis Ababa Sub-city police departments (2017–2020).  
+- Contains 32 features and 12,316 records.  
+
+## Project Highlights  
+- Data preprocessing and cleaning.  
+- Numerical, univariate, and multivariate analysis.  
+- Insightful visualizations.  
+- Conclusions and key findings based on the data.  
+
+---
 
 ## Installation
 
@@ -12,4 +27,4 @@
 Create a `.env` file in the project root with:
 
 ```plaintext
-DATASET_PATH="username/dataset-name"   # Replace with your dataset
+DATASET_PATH="saurabhshahane/road-traffic-accidents"
